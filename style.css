@@ -1,0 +1,117 @@
+html,
+body {
+  margin: auto 0;
+}
+/*Blocks */
+.zone {
+  cursor: pointer;
+  /* display: inline-block; */
+  text-align: center;
+  font-size: 4em;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: all 0.3s linear;
+  /* padding: 20px; */
+}
+
+/* Navigation */
+.sticky {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.main-nav {
+  display: flex;
+  font-size: 0.5em;
+  list-style: none;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .main-nav {
+    font-size: 0.2em;
+    padding: 0;
+  }
+}
+
+li {
+  margin-left: 30px;
+  transition: all 0.7s;
+}
+a {
+  color: #f5f5f6;
+  text-decoration: none;
+}
+li:hover {
+  transform: rotate(360deg);
+}
+.push {
+  margin-left: auto;
+}
+/*Navigation End */
+
+/* Cover */
+@media only screen and (max-width:400px) {
+    .cover {
+        width: 100%;
+        justify-items: center
+      }
+
+}
+.cover {
+  width: 7em;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+/* Grid */
+.grid-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.box > img {
+  width: 70%;
+}
+
+.box {
+  background-color: rgb(61, 59, 59);
+  padding: 10px;
+  margin-left: 0;
+}
+.box:hover {
+  transform: rotate(10deg);
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+/* Green Background */
+.green {
+  background: linear-gradient(to right top, rgb(115, 255, 0), rgb(0, 255, 119));
+}
+/* Red Background */
+.red {
+  background: linear-gradient(to right top, rgb(233, 94, 30), rgb(219, 12, 12));
+}
+/* Blue Background */
+.blue {
+  background: linear-gradient(
+    to right top,
+    rgb(30, 216, 233),
+    rgb(12, 74, 219)
+  );
+}
+/* Orange Background */
+.orange {
+  background: linear-gradient(
+    to right top,
+    rgb(233, 179, 30),
+    rgb(219, 129, 12)
+  );
+}
